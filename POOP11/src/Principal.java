@@ -14,7 +14,7 @@ import java.util.LinkedList;
 
 /**
  *
- * @author Equipo 11
+ * @author Equipo H
  */
 public class Principal {
 
