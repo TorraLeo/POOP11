@@ -4,12 +4,8 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.LinkedList;
-import java.util.StringTokenizer;
-
-import javax.swing.InputMap;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -73,24 +69,12 @@ public class Principal {
                 System.out.println(linea);
                 linea = bn.readLine();
             }
-            System.out.println("StringTokenizer========================================");
-            StringTokenizer tokenizer = new StringTokenizer(linea, ",");
-            while (tokenizer.hasMoreTokens()) {
-                System.out.println(tokenizer.nextToken()); // impresion de elementos del csv por item
-            }
             bn.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException ex) {
             System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
         }
-        // lo que hice es agregar los cosos a una lista ligada, para subirlos izi
-        // el pedo es regresarlos
-        // entonces no se, el string tokenizer vale pija, por lo de los [], asi que ni
-        // los puede separar
-
-        // No e
-        // e
     }
 
 }
